@@ -120,6 +120,7 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         configureViewComponent()
         self.hiddenKeyboard()
+        self.moveViewWithKeyboard()
      }
     
     //userinterface가 바뀔때마다 실행되는 override메서드임.
@@ -146,7 +147,7 @@ class RootViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(tredulerLabel)
         tredulerLabel.translatesAutoresizingMaskIntoConstraints = false
-        tredulerLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 70).isActive = true
+        tredulerLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 400).isActive = true
         tredulerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         view.addSubview(loginLabel)
