@@ -78,6 +78,7 @@ class RootViewController: UIViewController {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.setTitle("Login", for: UIControl.State.normal)
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(loginButtonTapped), for: UIControl.Event.touchUpInside)
         return button
     }()
 //    lazy var helloWwolrdLabel:UILabel = {
@@ -140,6 +141,12 @@ class RootViewController: UIViewController {
         }
     }
     
+    //MARK: Selector
+    @objc func loginButtonTapped(){
+        //navigation컨트롤러로 이동하게해준다.
+        navigationController?.pushViewController(
+            ScrollViewController(), animated: true)
+    }
     
     func configureViewComponent() {
         configureColors()
