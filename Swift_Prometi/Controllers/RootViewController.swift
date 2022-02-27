@@ -147,7 +147,7 @@ class RootViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(tredulerLabel)
         tredulerLabel.translatesAutoresizingMaskIntoConstraints = false
-        tredulerLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 400).isActive = true
+        tredulerLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 110).isActive = true
         tredulerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         view.addSubview(loginLabel)
