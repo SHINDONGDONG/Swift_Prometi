@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let scene  = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = UINavigationController(rootViewController: RootViewController()) //루트 뷰컨트롤러를 RootViewController로 지정
+        window?.rootViewController = TableViewController()
+//        window?.rootViewController = UINavigationController(rootViewController: RootViewController()) //루트 뷰컨트롤러를 RootViewController로 지정
         window?.makeKeyAndVisible() //윈도우를 보여주고 이 윈도우를 key 윈도우로 지정을 해준다. 
         
         
