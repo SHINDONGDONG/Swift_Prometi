@@ -8,6 +8,8 @@
 import UIKit
 
 private let collcetionCellIdentfier = "cell"
+private let collcetionHeaderCellIdentfier = "header"
+
 class CollectionViewController:UICollectionViewController {
     
     
@@ -26,6 +28,10 @@ class CollectionViewController:UICollectionViewController {
     func config() {
         view.backgroundColor = .systemGreen
         collectionView.register(CollectionCell.self, forCellWithReuseIdentifier: collcetionCellIdentfier)
+        //header의 레지스터를 등록한다.
+        collectionView.register(CollectionHeaderCell.self ,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: collcetionHeaderCellIdentfier)
     }
     
 }
@@ -41,10 +47,27 @@ extension CollectionViewController {
         cell.item = items[indexPath.row]
         return cell
     }
+    
+    //header cell을 collectionview 로 반환하는 kind 메서드
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                   withReuseIdentifier: collcetionHeaderCellIdentfier ,
+                                                                   for: indexPath) as! CollectionHeaderCell
+        
+        return cell
+    }
+    
 }
 
 //
 extension CollectionViewController:UICollectionViewDelegateFlowLayout {
+    //sizeforheader  = collectionheader 사이즈를 조정하는 메서드
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                        referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        return CGSize(width: view.frame.width, height: (view.frame.width / 3) * 2 )
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                         UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.width / 3) - 2, height: (view.frame.width / 3) - 2)
