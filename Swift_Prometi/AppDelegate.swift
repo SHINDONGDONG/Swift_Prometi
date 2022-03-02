@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = CollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        window.rootViewController = AnimationViewController()
+//        window.rootViewController = CollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
 //        window.rootViewController = TableViewController()
 //        window.rootViewController = UINavigationController(rootViewController: RootViewController())
         window.makeKeyAndVisible()
