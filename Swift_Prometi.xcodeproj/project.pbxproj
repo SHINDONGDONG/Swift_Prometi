@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1BEAFB27D0FA9100B9CCB1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BEAFA27D0FA9100B9CCB1 /* CollectionViewController.swift */; };
+		9B1BEAFD27D0FBD500B9CCB1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BEAFC27D0FBD500B9CCB1 /* CollectionViewCell.swift */; };
 		9B23804C27CF9E0E00650CD5 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23804B27CF9E0E00650CD5 /* AnimationViewController.swift */; };
 		9B23804E27CFA52100650CD5 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23804D27CFA52100650CD5 /* ModalView.swift */; };
 		9B4233D727C75DA100033438 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4233D627C75DA100033438 /* Extensions.swift */; };
@@ -18,8 +20,6 @@
 		9B49EC6427C43B64008D0264 /* Swift_PrometiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B49EC6327C43B64008D0264 /* Swift_PrometiUITests.swift */; };
 		9B49EC6627C43B64008D0264 /* Swift_PrometiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B49EC6527C43B64008D0264 /* Swift_PrometiUITestsLaunchTests.swift */; };
 		9B49EC7427C43C7C008D0264 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B49EC7327C43C7C008D0264 /* RootViewController.swift */; };
-		9B547FF527CD7DD300A81ADA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B547FF427CD7DD300A81ADA /* CollectionViewController.swift */; };
-		9B547FF727CD7F0900A81ADA /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B547FF627CD7F0900A81ADA /* CollectionCell.swift */; };
 		9B6FEA0B27CED0B400E07403 /* CollectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6FEA0A27CED0B400E07403 /* CollectionHeaderCell.swift */; };
 		9B7C4C6D27CC22BB00CFFF86 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C4C6C27CC22BB00CFFF86 /* ScrollViewController.swift */; };
 		9B7C4C6F27CC2C8F00CFFF86 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C4C6E27CC2C8F00CFFF86 /* TableViewController.swift */; };
@@ -44,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B1BEAFA27D0FA9100B9CCB1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		9B1BEAFC27D0FBD500B9CCB1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9B23804B27CF9E0E00650CD5 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		9B23804D27CFA52100650CD5 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		9B4233D627C75DA100033438 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -59,8 +61,6 @@
 		9B49EC6327C43B64008D0264 /* Swift_PrometiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_PrometiUITests.swift; sourceTree = "<group>"; };
 		9B49EC6527C43B64008D0264 /* Swift_PrometiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_PrometiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B49EC7327C43C7C008D0264 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		9B547FF427CD7DD300A81ADA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		9B547FF627CD7F0900A81ADA /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		9B6FEA0A27CED0B400E07403 /* CollectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderCell.swift; sourceTree = "<group>"; };
 		9B7C4C6C27CC22BB00CFFF86 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		9B7C4C6E27CC2C8F00CFFF86 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 				9B49EC7327C43C7C008D0264 /* RootViewController.swift */,
 				9B7C4C6C27CC22BB00CFFF86 /* ScrollViewController.swift */,
 				9B7C4C6E27CC2C8F00CFFF86 /* TableViewController.swift */,
-				9B547FF427CD7DD300A81ADA /* CollectionViewController.swift */,
 				9B23804B27CF9E0E00650CD5 /* AnimationViewController.swift */,
+				9B1BEAFA27D0FA9100B9CCB1 /* CollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,9 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				9B7C4C7127CC2E4900CFFF86 /* TableCell.swift */,
-				9B547FF627CD7F0900A81ADA /* CollectionCell.swift */,
 				9B6FEA0A27CED0B400E07403 /* CollectionHeaderCell.swift */,
 				9B23804D27CFA52100650CD5 /* ModalView.swift */,
+				9B1BEAFC27D0FBD500B9CCB1 /* CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,16 +307,16 @@
 			files = (
 				9B49EC4327C43B63008D0264 /* AppDelegate.swift in Sources */,
 				9B7C4C6F27CC2C8F00CFFF86 /* TableViewController.swift in Sources */,
+				9B1BEAFD27D0FBD500B9CCB1 /* CollectionViewCell.swift in Sources */,
 				9B23804C27CF9E0E00650CD5 /* AnimationViewController.swift in Sources */,
-				9B547FF727CD7F0900A81ADA /* CollectionCell.swift in Sources */,
 				9B49EC7427C43C7C008D0264 /* RootViewController.swift in Sources */,
 				9B7C4C7227CC2E4900CFFF86 /* TableCell.swift in Sources */,
 				9B23804E27CFA52100650CD5 /* ModalView.swift in Sources */,
-				9B547FF527CD7DD300A81ADA /* CollectionViewController.swift in Sources */,
 				9B7C4C6D27CC22BB00CFFF86 /* ScrollViewController.swift in Sources */,
 				9B49EC4527C43B63008D0264 /* SceneDelegate.swift in Sources */,
 				9B6FEA0B27CED0B400E07403 /* CollectionHeaderCell.swift in Sources */,
 				9B4233D727C75DA100033438 /* Extensions.swift in Sources */,
+				9B1BEAFB27D0FA9100B9CCB1 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

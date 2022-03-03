@@ -1,44 +1,46 @@
-
-
-
+//
+//  CollectionViewCell2.swift
+//  Swift_Prometi
+//
+//  Created by 申民鐡 on 2022/03/03.
+//
 
 import UIKit
 
-class CollectionHeaderCell:UICollectionReusableView {
+class CollectionViewCell2: UICollectionViewCell {
+    
     
     //MARK: Properties
-    lazy var label:UILabel = {
-        let label = UILabel()
-        label.text = "HEADER"
-        label.font = UIFont.italicSystemFont(ofSize: 40)
-        return label
-    }()
-    
     var item:String? {
         didSet {
             self.label.text = item
         }
     }
     
+    lazy var label:UILabel = {
+       let label = UILabel()
+        return label
+    }()
     
-    //MARK: init
+    //MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configure()
+        
+        configures()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder)ADFDSAFDSFDS")
     }
     
-    //MARK: configures
-    func configure(){
-        backgroundColor = .systemGreen
+    //MARK: Configures
+    func configures() {
+        backgroundColor = .red
         
         addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        
     }
+
 }

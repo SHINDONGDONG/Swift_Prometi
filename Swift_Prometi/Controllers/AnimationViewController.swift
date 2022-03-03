@@ -70,7 +70,8 @@ class AnimationViewController: UIViewController {
             self.blurEffectView.alpha = 0
             
         }) { (_) in
-            print("Animate completed")
+            //modalview의 superview에서 완전히 삭제시켜서 메모리 절약을 시킨다.
+            self.modalView.removeFromSuperview()
         }
     }
     
